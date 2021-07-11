@@ -1,14 +1,19 @@
-package com.example.demo.models;
+package com.example.demo.student.models;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @Entity
 @Table
 @EqualsAndHashCode
+@NoArgsConstructor
 public class Student {
 
 
@@ -20,9 +25,6 @@ public class Student {
     private int age;
     private double gpa;
     private String major;
-
-    public Student() {
-    }
 
     public Student(String name) {
 
